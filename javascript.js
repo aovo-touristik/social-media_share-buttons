@@ -4,3 +4,8 @@ function Set_Url(){
     document.querySelector('#Whatsapp_share').href = `https://wa.me/?text=${window.location.href}`
     document.querySelector('#telegram_share').href = `https://t.me/share/url?url=${window.location.href}`
 }
+function copyToClipboard(element) {
+    element = window.location.href
+    navigator.clipboard.writeText(element);
+
+}
